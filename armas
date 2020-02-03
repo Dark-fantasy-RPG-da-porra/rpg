@@ -1,0 +1,85 @@
+using System;
+
+
+
+namespace rpg
+{
+class MainClass {
+  public static void batalha(){
+    // ordem do array  = luck;bless;armor;hp;mana;dano fisico;dano magico;esta morto?
+    int[] guts = {1, 5, 10, 100, 25, 10, 30};
+    int[] guerreiro = {0, 0, 0, 100, 0, 25, 0, 1};
+    int[] lobo = {0, 0, 0, 60, 0, 20, 0, 1};
+    int[] oncaPintada = {0, 0, 0, 100, 0, 30, 0, 1};
+
+    
+    Console.WriteLine ("escolha inimigo>> guarreiro:1 /// lobo:2 /// onça:3");
+    int escolhaAlvo = Convert.ToInt32(Console.ReadLine());
+
+    /*switch (escolhaAlvo){
+      case 1:
+        alvo = guerreiro;
+        if (alvo[7] == 0){
+          Console.WriteLine ("o guerreiro já está morto");
+          alvo = oncaPintada ;
+        }
+        else{
+          Console.WriteLine ("o guerreiro avança com a lança");
+        }
+        break;
+      case 2:
+        alvo = lobo;
+        if (alvo[7] == 0){
+          Console.WriteLine ("o lobo já está morto");
+        }
+        else{
+          Console.WriteLine ("o  lobo avança ");
+        }
+        break;
+
+      case 3:
+        alvo = oncaPintada;
+        if (alvo[7] == 0){
+          Console.WriteLine ("a onça está morta");
+          alvo = lobo;
+        }
+        else{
+          Console.WriteLine ("o guerreiro avança com a lança");
+        }
+        break;
+
+      default:
+        Console.WriteLine("debugue mais");
+        break;
+    }
+
+  }*/
+  }
+  
+
+  public static void Main (string[] args) {
+    Console.WriteLine ("Armas disponiveis.");
+    
+    Console.WriteLine ("armas magicas:");
+    Console.WriteLine ("1:varinha||2:cajado||3:livros||4:pergaminhos||5:amuleto||6:anel");
+    
+    Console.WriteLine ("armas melee");
+    Console.WriteLine ("7:alabarda||8:maça||9: espada||10: ||11: flagelo||12: chicote||13:katana||14:tridente||15: lança||16: porrete||17: faca||18: machado||19: bastão||20: espada 2h||21: martelo ");
+    
+    Console.WriteLine ("armas a distancia:");
+    Console.WriteLine ("22:crossbow ||23: arco ||24: funda||25: zarabatana||26: javelin");
+    
+    
+    string[] armas = {"magnum cal.50", "varinha", "cajado", "livros", "pergaminhos", "amuleto", "alabarda", "maça", "espada", "flagelo", "chicote", "katana", "tridente", "lança", "porrete", "faca", "machado", "bastão", "espada 2h", "martelo", "crossbow", "funda", "zarabatana", "javelin", ""};
+
+    int arma = Convert.ToInt32(Console.ReadLine());
+
+
+    Console.WriteLine("a arma escolhida é : " + armas[arma]);
+
+
+    Console.WriteLine ("gostaram? sogestoes mandem no grupo");
+    int final = Convert.ToInt32(Console.ReadLine());
+  }
+}
+}
